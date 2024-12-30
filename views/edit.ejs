@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            background-color: black;
+            color: grey;
+            font-family: monospace;
+        }
+        #btn {
+            float: right;
+            margin: 20px;
+        }
+        #span {
+            color: rgb(64, 59, 142);
+            font-size: 2.3rem;
+        }
+        #span2 {
+            color: rgb(64, 59, 142);
+            font-size: 3.9rem;
+            margin: 30px 30px;
+        }
+        .post {
+            border: 1px solid grey;
+            height: 150px;
+            margin: 10px 30px;
+            width: 500px;
+        }
+        .div {
+            height: 70%;
+        }
+        .div2 button {
+            margin: 0 5px;
+            background-color: red;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            padding: 8px 20px;
+        }
+        /* Ensure links inside buttons have no default link styling */
+        .div2 button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="margin: 30px; font-size: 1.5rem;">Edit Profile</h1>
+
+    <form action="/updatepost/<%=post._id%>" method="post">
+        <textarea name="content" placeholder="Write Your Thoughts ...... " 
+        style="width: 400px; padding: 10px; height: 60px; margin: 10px 30px; background-color: black; color: white;"><%= post.content %></textarea>
+        <button type="submit" style="margin: 10px 30px; padding: 10px 20px; background-color: rgb(64, 59, 142); border: none; color: white;">
+            Edit Post
+        </button>
+    </form>
+   
+</body>
+</html>

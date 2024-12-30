@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            background-color: black;
+            color: white;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+        }
+        h1{
+            font-family: monospace;
+            color: grey;
+            margin: 10px;
+        }
+        button{
+            background-color: rgb(131, 41, 41);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 3px;
+            border: none;
+            font-size: 1.3rem;
+        }
+        input{
+            margin: 10px 0px;
+            padding: 8px 13px;
+            font-size: 1rem;
+            background-color: transparent;
+            outline: none;
+            color: grey;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login User</h1>
+    <form action="/login" method="post">
+        <input type="email" name="email" id="" placeholder="email">
+        <input type="password" name="password" id="" placeholder="password">
+        <button>Login</button>
+    </form>
+</body> 
+</html>
